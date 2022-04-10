@@ -1,0 +1,15 @@
+context:
+  type: select
+  options:
+    - Open this select menu
+    - One
+    - Two
+    - Three
+  multiple: false
+  multipleSize: number
+variants:
+  - name: sizing
+    context:
+      sizes:
+      - sm
+      - lg

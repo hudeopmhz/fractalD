@@ -1,0 +1,8 @@
+{% for size in sizes%}
+{% if size === 'sm' %}
+<p class="my-2">You may also choose from small custom selects to match our similarly sized text inputs by adding class `form-select-sm`</p>
+{% else %}
+<p class="mt-5 mb-2">Similarly large custom selects to match our similarly sized text inputs by adding class `form-select-lg`</p>
+{% endif%}
+{% render '@base-form', {type: 'select', options: options, size: size}%}
+{% endfor %}

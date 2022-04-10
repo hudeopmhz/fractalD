@@ -1,0 +1,10 @@
+context:
+  label: Outline
+variants:
+  - name: default
+    label: Primary
+  - name: secondary
+    order: 2
+  - name: link
+    context:
+      href: '#'

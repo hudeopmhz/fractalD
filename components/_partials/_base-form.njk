@@ -1,0 +1,11 @@
+{% if (type === "checkbox" or type === "radio" )%}
+<input type="{{type}}" class="form-check-input{%if inputClass%} {{inputClass}}{%endif%}" id="{{type}}-id{%if id%}-{{id}}{%endif%}" name="{{type}}-name" value="{{type}}-value" {% if checked%}checked{%endif%} {% if disabled%}disabled{%endif%}>
+<label for="{{type}}-id{%if id%}-{{id}}{%endif%}" class="{% if inputClass !== "btn-check"%} form-check-label {% else %}btn {{labelClass}}{%endif%}" >{%if text%}{{text}}{%else%}{% if disabled%}Disabled {%endif%}{% if checked%}Checked {% else %}Default {%endif%}{{type | capitalize }}{%endif%}</label>{% elif type === "select" %}
+<select class="form-select{% if size %} form-select-{{size}}{% endif%}" {% if multiple %}multiple{% endif%} {% if multipleSize %}size="{{multipleSize}}"{% endif%} {% if disabled %}disabled{% endif%} aria-label="{{type}}">
+{% for option in options%}<option value="{{option}}"{% if loop.first %} selected{% endif %}>{{option}}</option>
+{% endfor %}</select>
+
+{% else %}
+<label for="{{type}}-id" class="form-label">Input {{type | capitalize }} Label</label>
+<input type="{{type}}" {% if type === "range"%} class="form-range" {%else %}class="form-control" {% endif %} id="{{type}}-id" {% if placeholder %} placeholder="{{placeholder}}"{% endif%} {% if type == "tel"%} pattern="{{pattern}}" {% endif %}{% if type == "checkbox"%} name="{{type}}-name" value="{{type}}-name" {% endif %}>
+{% endif %}

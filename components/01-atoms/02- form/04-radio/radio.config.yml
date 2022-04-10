@@ -1,0 +1,8 @@
+context:
+  # name: checkbox
+  type: radio
+  options:
+    - checkbox 1
+    - checkbox 2
+  variants:
+    - name: disabled

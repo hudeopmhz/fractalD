@@ -1,0 +1,36 @@
+context:
+  title: Key features
+  body: Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta optio placeat quisquam minus rem omnis, aliquam consequatur at deleniti, laudantium fugiat ratione? Minima voluptatem, aliquam quod dolorem necessitatibus, blanditiis, itaque deleniti.
+variants:
+  - name: default
+    label: Centered
+    context:
+      component:
+        handle: 'features-grid'
+        context: {}
+      button:
+        label: Take the tour
+        class: w-full sm:w-auto
+  - name: right
+    context:
+      title: Tailored for your project
+      component:
+        handle: 'image--full'
+        context:
+          src: '/illustrations/work.svg'
+          width: 741
+          height: 474
+      button:
+        label: Read more
+  - name: left
+    view: 'section--right.njk'
+    context:
+      title: Roadmap
+      component:
+        handle: 'image--full'
+        context:
+          src: '/illustrations/scrum-board.svg'
+          width: 822
+          height: 580
+      button: '@section--right.button'
+      componentClass: md:order-2
