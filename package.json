@@ -6,7 +6,7 @@
     "clean": "rimraf dist",
     "start": "fractal start --sync && webpack --mode development --watch",
     "build": "npm run clean && npm run build:webpack && npm run build:fractal",
-    "build:webpack": "NODE_ENV=production webpack --mode production",
+    "build:webpack": "webpack --mode production",
     "build:fractal": "fractal build"
   },
   "dependencies": {
@@ -22,7 +22,7 @@
     "postcss": "^8.2.13",
     "postcss-loader": "^5.2.0",
     "rimraf": "^3.0.2",
-    "tailwindcss": "^2.1.2",
+    "tailwindcss": "^3.0.23",
     "webpack": "^5.36.1",
     "webpack-cli": "^4.6.0"
   }
