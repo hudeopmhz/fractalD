@@ -10,7 +10,7 @@
     "build:fractal": "fractal build"
   },
   "dependencies": {
-    "@frctl/fractal": "^1.5.6",
+    "@frctl/fractal": "^1.5.13",
     "@frctl/mandelbrot": "^1.9.0",
     "@frctl/nunjucks": "^2.0.10"
   },
