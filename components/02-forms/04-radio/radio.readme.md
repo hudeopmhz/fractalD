@@ -13,7 +13,7 @@ Our checks use custom Bootstrap icons to indicate checked or indeterminate state
   <label class="form-check-label" for="idToReferenceLabel">
     Default checkbox<input class="form-check-input" type="checkbox" value="" id="idToReferenceLabel">
   </label>
-</div>
+
 ```
 ---
 ```html
@@ -21,7 +21,7 @@ Our checks use custom Bootstrap icons to indicate checked or indeterminate state
   <label class="form-check-label">
     Default checkbox<input class="form-check-input" type="checkbox" value="">
   </label>
-</div>
+
 ```
 
 ## Inline

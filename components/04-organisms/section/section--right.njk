@@ -5,7 +5,7 @@
         {% if component %}
             <div class="flex-shrink-0 md:w-2/5 lg:w-1/2{% if componentClass %} {{ componentClass }}{% endif %}">
                 {% render '@' + component.handle, component.context|default({}), true %}
-            </div>
+            
         {% endif %}
 
         <div class="md:max-w-md mx-auto">
@@ -15,8 +15,8 @@
             {% if button %}
                 <div class="mt-4 lg:mt-6">
                     {% render '@button--link', button, true %}
-                </div>
+                
             {% endif %}
-        </div>
-    </div>
+        
+    
 {% endblock %}

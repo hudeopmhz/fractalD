@@ -9,12 +9,12 @@
     {% if component %}
         <div class="mt-6 md:mt-8 lg:mt-10">
             {% render '@' + component.handle, component.context, true %}
-        </div>
+        
     {% endif %}
 
     {% if button %}
         <div class="mt-6 md:mt-8 lg:mt-10 sm:text-center">
             {% render '@button', button, true %}
-        </div>
+        
     {% endif %}
 {% endblock %}
